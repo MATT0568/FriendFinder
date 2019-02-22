@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reservation Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container" id="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-fire"></span> Personality Test</h1>
+      <hr>
+      <br>
+      <div class="text-center">
+        <a href="/">
+          <button class="btn btn-lg btn-default">
+            <span class="fa fa-home"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            Personality Survey
+          </div>
+          <div class="card-body">
+            <form role="form" id="survey">
+              <h3>Personal Info: </h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="picture">Picture Link</label>
+                <input type="text" class="form-control" id="picture">
+              </div>
+              <h3>Questions: </h3>
+              <h5>Answer on a scale of 1 to 5 from not agreeing at all to strongly agreeing.</h5>
+              <P>1. I like being outside more than being inside:<BR>
+                <input type="radio" name="question-1" value=1>1<BR>
+                <input type="radio" name="question-1" value=2>2<BR>
+                <input type="radio" name="question-1" value=3>3<BR>
+                <input type="radio" name="question-1" value=4>4<BR>
+                <input type="radio" name="question-1" value=5>5<BR>
+              </p>
+
+              <P>2. I enjoy relaxing more than something that would require effort:<BR>
+                <input type="radio" name="question-2" value=1>1<BR>
+                <input type="radio" name="question-2" value=2>2<BR>
+                <input type="radio" name="question-2" value=3>3<BR>
+                <input type="radio" name="question-2" value=4>4<BR>
+                <input type="radio" name="question-2" value=5>5<BR>
+              </p>
+
+              <P>3. I love eating food:<BR>
+                <input type="radio" name="question-3" value=1>1<BR>
+                <input type="radio" name="question-3" value=2>2<BR>
+                <input type="radio" name="question-3" value=3>3<BR>
+                <input type="radio" name="question-3" value=4>4<BR>
+                <input type="radio" name="question-3" value=5>5<BR>
+              </p>
+
+              <P>4. I love exercise:<BR>
+                <input type="radio" name="question-4" value=1>1<BR>
+                <input type="radio" name="question-4" value=2>2<BR>
+                <input type="radio" name="question-4" value=3>3<BR>
+                <input type="radio" name="question-4" value=4>4<BR>
+                <input type="radio" name="question-4" value=5>5<BR>
+              </p>
+
+              <P>5. I Like animals:<BR>
+                <input type="radio" name="question-5" value=1>1<BR>
+                <input type="radio" name="question-5" value=2>2<BR>
+                <input type="radio" name="question-5" value=3>3<BR>
+                <input type="radio" name="question-5" value=4>4<BR>
+                <input type="radio" name="question-5" value=5>5<BR>
+              </p>
+
+              <P>6. I like politics:<BR>
+                <input type="radio" name="question-6" value=1>1<BR>
+                <input type="radio" name="question-6" value=2>2<BR>
+                <input type="radio" name="question-6" value=3>3<BR>
+                <input type="radio" name="question-6" value=4>4<BR>
+                <input type="radio" name="question-6" value=5>5<BR>
+              </p>
+
+              <P>7. I like to travel:<BR>
+                <input type="radio" name="question-7" value=1>1<BR>
+                <input type="radio" name="question-7" value=2>2<BR>
+                <input type="radio" name="question-7" value=3>3<BR>
+                <input type="radio" name="question-7" value=4>4<BR>
+                <input type="radio" name="question-7" value=5>5<BR>
+              </p>
+
+              <P>8. I have a sense of humor:<BR>
+                <input type="radio" name="question-8" value=1>1<BR>
+                <input type="radio" name="question-8" value=2>2<BR>
+                <input type="radio" name="question-8" value=3>3<BR>
+                <input type="radio" name="question-8" value=4>4<BR>
+                <input type="radio" name="question-8" value=5>5<BR>
+              </p>
+
+              <P>9. I am religious:<BR>
+                <input type="radio" name="question-9" value=1>1<BR>
+                <input type="radio" name="question-9" value=2>2<BR>
+                <input type="radio" name="question-9" value=3>3<BR>
+                <input type="radio" name="question-9" value=4>4<BR>
+                <input type="radio" name="question-9" value=5>5<BR>
+              </p>
+
+              <P>10. I am a talker:<BR>
+                <input type="radio" name="question-10" value=1>1<BR>
+                <input type="radio" name="question-10" value=2>2<BR>
+                <input type="radio" name="question-10" value=3>3<BR>
+                <input type="radio" name="question-10" value=4>4<BR>
+                <input type="radio" name="question-10" value=5>5<BR>
+              </p>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+  </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+    var survey = [
+      $('input[name=question-1]:checked', '#survey').val(),
+      $('input[name=question-2]:checked', '#survey').val(),
+      $('input[name=question-3]:checked', '#survey').val(),
+      $('input[name=question-4]:checked', '#survey').val(),
+      $('input[name=question-5]:checked', '#survey').val(),
+      $('input[name=question-6]:checked', '#survey').val(),
+      $('input[name=question-7]:checked', '#survey').val(),
+      $('input[name=question-8]:checked', '#survey').val(),
+      $('input[name=question-9]:checked', '#survey').val(),
+      $('input[name=question-10]:checked', '#survey').val(),
+    ];
+
+    var newFriend = {
+      name: $("#name").val().trim(),
+      picture: $("#picture").val().trim(),
+      scores: survey
+    };
+
+    console.log(newFriend);
+
+    $.post("/api/friends", newFriend)
+      .then(function (data) {
+        $("#myModal").empty();
+        $("#myModal").html(`
+          <div class="modal-content">
+            <img src="${data.photo}" alt="pic">
+            <h1>${data.name}</h1>
+          </div>
+        `);
+        var modal = document.getElementById('myModal');
+        modal.style.display = "block";
+      });
+  });
+</script>
